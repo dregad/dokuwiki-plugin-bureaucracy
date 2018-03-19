@@ -20,7 +20,7 @@ class helper_plugin_bureaucracy_actiontemplate extends helper_plugin_bureaucracy
      *
      * @throws Exception
      */
-    public function run($fields, $thanks, $argv) {
+    public function run(&$fields, &$thanks, $argv) {
         global $conf;
 
         list($tpl, $this->pagename, $sep) = $argv;
